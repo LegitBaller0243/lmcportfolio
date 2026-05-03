@@ -11,8 +11,7 @@ Barebones multi-page GitHub Pages site scaffold for the final portfolio assignme
 - `projects/project-3.html` (Major Project 3)
 - `professional/proj-a.html` (Professional Work 1)
 - `professional/proj-b.html` (Professional Work 2)
-- `assets/css/styles.css` (Shared site styling)
-- `assets/images/`, `assets/docs/`, `assets/media/` (Asset placeholders)
+- `css/styles.css` (Shared site styling)
 - `.nojekyll` (GitHub Pages compatibility)
 
 ## Publish to GitHub Pages
@@ -31,8 +30,8 @@ Barebones multi-page GitHub Pages site scaffold for the final portfolio assignme
 - [ ] Each professional project page has a 100-150 word introduction.
 - [ ] Self-assessment addresses all 4 outcomes: Rhetoric, Process, Modes & Media, Design.
 - [ ] Each outcome section includes at least one concrete evidence example.
-- [ ] Artifact links are replaced with real files/repos/media.
-- [ ] Placeholder image paths are replaced and alt text is updated.
+- [ ] Artifact links are replaced with real Docs/Drive/Notion/GitHub URLs.
+- [ ] Any visual placeholders are replaced with project visuals or links.
 
 ## Notes
 
