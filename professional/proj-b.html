@@ -28,32 +28,14 @@
         <section>
           <h2>Overview (100-150 words)</h2>
           <p>This project was created as a CUDA programming assignment focused on learning how GPUs accelerate computationally intensive problems. I built custom GPU kernels for matrix multiplication, batched operations, FlashAttention, and a 3D heat-equation solver, then compared their accuracy and performance against CPU code and cuBLAS. Beyond the code, the project includes benchmark tables and Nsight Compute analysis that explain where performance improved and where bottlenecks remained. For outside audiences, it illustrates my ability to translate complex technical work into clear evidence-based findings, connect implementation choices to measurable results, and communicate engineering tradeoffs in a way hiring managers and future employers can understand.</p>
-          <p class="small muted">Word-count target: 100-150 words.</p>
         </section>
 
         <section>
           <h2>Artifacts</h2>
           <div class="card">
             <p><strong>Nsight Compute Stats (Markdown)</strong></p>
-            <p>Paste your benchmark/stats markdown below and keep the section headings for readability.</p>
-            <pre><code># Nsight Compute Summary
-
-## Kernel 1: [name]
-- Time:
-- Achieved Occupancy:
-- DRAM Throughput:
-- SM Throughput:
-
-## Kernel 2: [name]
-- Time:
-- Achieved Occupancy:
-- DRAM Throughput:
-- SM Throughput:
-
-## Notes
-- Key bottleneck:
-- Optimization takeaway:
-</code></pre>
+            <p><a class="inline-link" href="../ncu_summary.md" target="_blank" rel="noopener noreferrer">Open ncu_summary.md</a></p>
+            <div id="ncu-markdown" class="markdown-viewer" aria-live="polite">Loading markdown...</div>
           </div>
         </section>
 
@@ -61,7 +43,21 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner small"><p>Professional project page B placeholder.</p></div>
+      <div class="footer-inner small"><p>© 2026 Sameer Jivangikar</p></div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      (async function () {
+        const container = document.getElementById("ncu-markdown");
+        try {
+          const response = await fetch("../ncu_summary.md");
+          if (!response.ok) throw new Error("Failed to load markdown file.");
+          const markdown = await response.text();
+          container.innerHTML = marked.parse(markdown);
+        } catch (err) {
+          container.textContent = "Could not render markdown preview. Use the link above to open ncu_summary.md directly.";
+        }
+      })();
+    </script>
   </body>
 </html>

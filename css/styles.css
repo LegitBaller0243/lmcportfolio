@@ -205,6 +205,54 @@ main section {
   font-size: 0.92rem;
 }
 
+.markdown-viewer {
+  margin-top: 0.85rem;
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #ffffff;
+  max-height: 700px;
+  overflow: auto;
+}
+
+.markdown-viewer h1,
+.markdown-viewer h2,
+.markdown-viewer h3 {
+  margin-top: 1rem;
+}
+
+.markdown-viewer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0 1rem;
+  font-size: 0.92rem;
+}
+
+.markdown-viewer th,
+.markdown-viewer td {
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown-viewer th {
+  background: #f2f7fc;
+}
+
+.markdown-viewer code {
+  background: #f4f8fc;
+  padding: 0.08rem 0.28rem;
+  border-radius: 4px;
+}
+
+.markdown-viewer pre {
+  background: #f4f8fc;
+  padding: 0.7rem;
+  border-radius: 8px;
+  overflow: auto;
+}
+
 @media (max-width: 720px) {
   .header-inner,
   .main-inner,
