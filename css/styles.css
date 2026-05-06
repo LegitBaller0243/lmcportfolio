@@ -72,6 +72,22 @@ body {
   padding: 1.1rem 0 0.95rem;
 }
 
+.site-brand {
+  margin: 0 0 0.35rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.site-brand a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.site-brand a:hover,
+.site-brand a:focus-visible {
+  color: var(--accent);
+}
+
 .main-inner {
   padding: 1.3rem 0 2rem;
 }

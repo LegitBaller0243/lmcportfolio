@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CUDA MatMul Kernels</title>
+    <title>Portfolio | CUDA MatMul Kernels</title>
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
@@ -11,16 +11,13 @@
 
     <header class="site-header">
       <div class="header-inner">
+        <p class="site-brand"><a href="../index.html">Portfolio</a></p>
         <h1>CUDA MatMul Kernels</h1>
         <nav aria-label="Primary">
           <ul>
-            <li><a href="../index.html">Landing</a></li>
             <li><a href="../self-assessment.html">Self-Assessment</a></li>
-            <li><a href="../projects/project-1.html">Project 1</a></li>
-            <li><a href="../projects/project-2.html">Project 2</a></li>
-            <li><a href="../projects/project-3.html">Project 3</a></li>
-            <li><a href="proj-a.html">EchoVision</a></li>
-            <li><a href="proj-b.html">CUDA MatMul Kernels</a></li>
+            <li><a href="../class-projects.html">Class Projects</a></li>
+            <li><a href="../professional-work.html">Professional Work</a></li>
           </ul>
         </nav>
       </div>
@@ -30,36 +27,36 @@
       <div class="main-inner">
         <section>
           <h2>Overview (100-150 words)</h2>
-          <p class="todo"><strong>TODO:</strong> Introduce this external project (course, internship, research, org) in 100-150 words and explain relevance.</p>
-          <p>CUDA MatMul Kernels is a hackathon/engineering project centered on implementing and comparing GPU matrix multiplication kernels for performance and correctness. The work involved translating low-level optimization decisions into clear documentation and results that others could interpret, reproduce, and evaluate. I focused on explaining tradeoffs among baseline, tiled, and optimized kernel strategies, including memory access patterns, occupancy considerations, and measured speedups. Beyond implementation, I structured the project communication around benchmarks, constraints, and practical takeaways. This project demonstrates my ability to pair technical depth with clear reporting, making complex systems-level work understandable to collaborators and reviewers in team settings and presentations.</p>
+          <p>This project was created as a CUDA programming assignment focused on learning how GPUs accelerate computationally intensive problems. I built custom GPU kernels for matrix multiplication, batched operations, FlashAttention, and a 3D heat-equation solver, then compared their accuracy and performance against CPU code and cuBLAS. Beyond the code, the project includes benchmark tables and Nsight Compute analysis that explain where performance improved and where bottlenecks remained. For outside audiences, it illustrates my ability to translate complex technical work into clear evidence-based findings, connect implementation choices to measurable results, and communicate engineering tradeoffs in a way hiring managers and future employers can understand.</p>
           <p class="small muted">Word-count target: 100-150 words.</p>
         </section>
 
         <section>
-          <h2>What This Shows About Me as a Technical Communicator</h2>
-          <p class="todo"><strong>TODO:</strong> Explain how your communication choices support external audiences or stakeholders.</p>
-        </section>
-
-        <section>
           <h2>Artifacts</h2>
-          <div class="grid">
-            <article class="card"><strong>PDF:</strong> <a class="inline-link" href="#">Add document/report</a></article>
-            <article class="card"><strong>Slides:</strong> <a class="inline-link" href="#">Add presentation link</a></article>
-            <article class="card"><strong>Video:</strong> <a class="inline-link" href="#">Add demo or explanation clip</a></article>
-            <article class="card"><strong>Repo:</strong> <a class="inline-link" href="#">Add GitHub repository link</a></article>
-            <article class="card"><strong>Screenshot:</strong>
-              <p><strong>Screenshot:</strong> Add CUDA MatMul visual link or embed here.</p>
-            </article>
+          <div class="card">
+            <p><strong>Nsight Compute Stats (Markdown)</strong></p>
+            <p>Paste your benchmark/stats markdown below and keep the section headings for readability.</p>
+            <pre><code># Nsight Compute Summary
+
+## Kernel 1: [name]
+- Time:
+- Achieved Occupancy:
+- DRAM Throughput:
+- SM Throughput:
+
+## Kernel 2: [name]
+- Time:
+- Achieved Occupancy:
+- DRAM Throughput:
+- SM Throughput:
+
+## Notes
+- Key bottleneck:
+- Optimization takeaway:
+</code></pre>
           </div>
         </section>
 
-        <section>
-          <h2>Process Evidence</h2>
-          <div class="grid">
-            <article class="card"><strong>Process Artifacts:</strong> Add mockups, notes, or workflow screenshots.</article>
-            <article class="card"><strong>Results:</strong> Add outcomes and what you learned as a communicator.</article>
-          </div>
-        </section>
       </div>
     </main>
 
